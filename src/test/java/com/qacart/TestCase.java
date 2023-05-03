@@ -14,6 +14,6 @@ public class TestCase {
                 .when().get("/api/v1/users")
                 .then().log().ifValidationFails()
                 .assertThat().body("[0].name",equalTo("Bruce1 Walter"));
-
+//
     }
 }
